@@ -1,4 +1,3 @@
 # `backup`
 
-`backup` is a website which exposes a script to upload backups and an archive of
-uploaded backups.
+`backup` is a website which displays a list of stored backups.
