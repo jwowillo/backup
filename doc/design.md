@@ -22,7 +22,7 @@
 * A static file handler will serve archives from the directory 'archive' (2).
 * A home page handler will inject all archives in the archive directory into a
   template that displays each archive with its download link, file-size, and
-  upload-time in a list ordered by the most recent upload time (2).
+  upload-time in a table ordered by the most recent upload time (2).
 * The home page will also display a link to download the backup-script (2).
 * Templates will be stored in a directory called 'tmpl' (2).
 * The template, archive directory, and script will be cached (2).
