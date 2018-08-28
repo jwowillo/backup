@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# deploy backup to the passed remote host, user, and directory
+
+ssh $2@$1 << EOF
+go get -u gitbackup.com/jwowillo/backup
+sudo pkill backup
+cd $3
+sudo nohup backup --port 80 >/dev/null 2>/dev/null &
+EOF

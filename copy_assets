@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# copy_assets in 'static' and 'tmpl' to passed remote host, user, and directory.
+
+ssh $2@$1 << EOF
+cd $3
+rm -rf backup
+git clone https://gitbackup.com/jwowillo/backup.git
+mkdir -p static
+mv backup/static/* static
+mkdir -p tmpl
+mv backup/tmpl/* tmpl
+rm -rf backup
+EOF
