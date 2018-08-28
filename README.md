@@ -21,6 +21,16 @@ The script recursively zips the working directory into an archive named with the
 working directory and current time and copies the archive into the passed remote
 host, user, and directory.
 
+## Run `copy_assets`
+
+The script copies the directories containing assets from the `backup` repo to
+the passed remote host, user, and directory.
+
+## Run `deploy`
+
+Make sure the 'archive' directory is in the remote directory. The script deploys
+`backup` to the passed remote host, user, and directory.
+
 ## Run `run_tests`
 
 `run_tests`
