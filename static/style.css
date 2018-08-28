@@ -1,0 +1,30 @@
+body {
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: helvetica;
+  color: #131313;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+table, th, td {
+  border: 1px solid #131313;
+  border-collapse: collapse;
+}
+
+th, td, td > a {
+  font-size: 1.2em;
+}
+
+th, td {
+  padding: 4px;
+}
+
+a {
+  font-size: 1.5em;
+  color: #5999ff;
+}

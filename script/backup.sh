@@ -10,4 +10,5 @@ FILE=$(basename $(pwd))-$(date +%s).zip
 
 zip -r $FILE .
 
+ssh $2@$1 mkdir -p $3
 scp $FILE $2@$1:$3
