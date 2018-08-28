@@ -1,9 +1,9 @@
 # v1.0.0 Design
 
-## `backup`
+## `script/backup.sh`
 
-* `backup` in directory 'script' will recursively zip its working directory and
-  copy it to a passed remote user, host, and directory (1).
+* `backup.sh` in directory 'script' will recursively zip its working directory
+  and copy it to a passed remote user, host, and directory (1).
 
 ## `archive`
 
@@ -13,11 +13,11 @@
 
 ## Server
 
-* The server will be able to be configured with a port and an archive directory
-  (2).
-* A handler at path '/script' will read 'script/backup' and replace the remote
-  user, host, and directory with the server's configured values before returning
-  the script (2).
+* The server will be able to be configured with a port and the host it is
+  running on and that contains the archive directory (2).
+* A handler at path '/script/backup.sh' will read 'script/backup.sh' and replace
+  the remote user, host, and directory with the server's configured values
+  before returning the script (2).
 * A static file handler will serve static files from the directory 'static' (2).
 * A static file handler will serve archives from the directory 'archive' (2).
 * A home page handler will inject all archives in the archive directory into a

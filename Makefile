@@ -1,5 +1,9 @@
 .PHONY: doc
 
+backup:
+	@echo making backup
+	cd cmd/backup && go install
+
 doc:
 	@echo making doc
 	pandoc doc/requirements.md --latex-engine xelatex \

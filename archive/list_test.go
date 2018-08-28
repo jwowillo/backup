@@ -1,3 +1,4 @@
+// Package archive_test tests archive using data from the directory 'data'.
 package archive_test
 
 import (

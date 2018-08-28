@@ -1,8 +1,19 @@
 # `backup`
 
-`backup` is a website which displays a list of stored backups.
+`backup` is a website which displays a table of stored backups.
 
-## Run `backup`
+## Install
+
+`go get gopkg.in/jwowillo/backup`
+
+# Run `backup`
+
+`backup ?--port 80 ?--host 127.0.0.1`
+
+Make sure host is the host the server will be accessed from on its network and
+that backups will be deployed to.
+
+## Run `script/backup.sh`
 
 `backup 127.0.0.1 user '~'`
 

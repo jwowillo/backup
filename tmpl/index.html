@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>backup</title>
+
+  <link rel="icon" href="/static/favicon.gif" />
+
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1>backup</h1>
+    </header>
+
+    <p><a href="/script/backup.sh" download="backup.sh">Backup Script</a></p>
+
+    <table>
+      <tr>
+        <th>Archive</th>
+        <th>Size</th>
+        <th>Modified</th>
+      </tr>
+      {{ range . }}
+      <tr>
+        <td><a href="/archive/{{ .Name }}" download="{{ .Name }}">{{ .Name }}</a></td>
+        <td>{{ .Size }} bytes</td>
+        <td>{{ .ModifiedTime }}</td>
+      </tr>
+      {{ end }}
+    </table>
+  </main>
+</body>
+
+</html>
